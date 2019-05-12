@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">org.h2.Driver</property>
+		<property name="connection.url">jdbc:h2:tcp://localhost/~/eCV</property>
+		<property name="connection.username">sa</property>
+		<property name="connection.password">sa</property>
+		<property name="connection.pool_size">5</property>
+		<property name="dialect">org.hibernate.dialect.H2Dialect</property>
+		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
+		<property name="hibernate.enable_lazy_load_no_trans">true</property>
+		<property name="show_sql">true</property>
+		<property name="hbm2ddl.auto">update</property>
+		
+		<!-- IMPORTANTE, RELLENAR CON LOS ENLACES A LOS MODELOS DE LA BASE DE DATOS -->
+		
+		<mapping class="ecv.model.Usuario" />
+		<mapping class="ecv.model.PersonalData" />
+		<mapping class="ecv.model.Career" />
+		<mapping class="ecv.model.Studies" />
+		<mapping class="ecv.model.Address" />
+		<mapping class="ecv.model.Nationality" />
+		<mapping class="ecv.model.CareerItem" />
+		<mapping class="ecv.model.Title" />
+		<mapping class="ecv.model.Language" />
+		<mapping class="ecv.model.CurrentJob" />
+		<mapping class="ecv.model.Phd" />
+		<mapping class="ecv.model.CV" />
+		
+	</session-factory>
+</hibernate-configuration>

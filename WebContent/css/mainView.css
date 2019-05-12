@@ -1,0 +1,112 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #f1f6fb;
+	line-height: 1;
+	font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
+	font-smoothing: always;
+	text-rendering: optimizeLegibility;
+}
+
+.mainDiv {	
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justif-content: flex-start;
+}
+
+.header{
+	background-color: #FFF;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.headerContent{
+	width: 95%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.headerBtnDiv{
+	margin: 0px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.mainViewDiv{
+	position: relative;
+	padding: 30px;
+}
+
+.logoDiv{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo{
+	width: 75px;
+	height: 75px;
+}
+
+#roll{
+	width: 100%;
+	height: 100%;
+}
+
+.headerButton {
+	width: 100%;
+    height: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+	margin: 10px;
+    background-color: #f15f4c;
+    border-color: transparent;
+    color: #fff;
+    transition: background 0.5s ease-in-out 0s;
+    
+    display:inline-block;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-moz-user-select: none;
+	border: 1px solid transparent;
+    font-family: inherit;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.headerButton:hover, .headerButton:focus, .headerButton:active, .headerButton.active {
+    background-color: #f3372b;
+    border-color: transparent;
+    outline: none;
+}
+
+.headerButton.active.focus, .headerButton.active:focus, .headerButton.active:hover, .headerButton.focus:active, .headerButton:active:focus, .headerButton:active:hover {
+    background-color: #f3372b;
+    border-color: transparent;
+    outline: none;
+}

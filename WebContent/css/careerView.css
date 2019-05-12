@@ -1,0 +1,490 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-color: #f1f6fb;
+	line-height: 1;
+	font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
+	font-smoothing: always;
+	text-rendering: optimizeLegibility;
+}
+
+.mainDiv {	
+    padding: 0px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justif-content: flex-start;
+}
+
+.header{
+	background-color: #FFF;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.userViewDiv{
+	height: 90%;
+	width: 100%;
+}
+
+.datos{
+	height: 90%;
+	width: 100%;
+}
+
+.headerContent{
+	width: 95%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.logoDiv{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#logo{
+	width: 75px;
+	height: 75px;
+}
+
+.exportBttn{
+	width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-bottom: 0px;
+    background-color: #FFD57F;
+    border-color: transparent;
+    color: #000;
+    transition: background 0.5s ease-in-out 0s;
+    
+    display:inline-block;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-moz-user-select: none;
+	border: 1px solid transparent;
+    font-family: inherit;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.exportBttn:hover, .exportBttn:focus, .exportBttn:active, .exportBttn.active {
+    background-color: #FFBC33;
+    border-color: transparent;
+    outline: none;
+}
+
+.exportBttn.active.focus, .exportBttn.active:focus, .exportBttn.active:hover, .exportBttn.focus:active, .exportBttn:active:focus, .exportBttn:active:hover {
+    background-color: #FFBC33;
+    border-color: transparent;
+    outline: none;
+}
+
+.headerButton {
+	width: 100%;
+    height: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background-color: #f15f4c;
+    border-color: transparent;
+    color: #fff;
+    transition: background 0.5s ease-in-out 0s;
+    
+    display:inline-block;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-moz-user-select: none;
+	border: 1px solid transparent;
+    font-family: inherit;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.headerButton:hover, .headerButton:focus, .headerButton:active, .headerButton.active {
+    background-color: #f3372b;
+    border-color: transparent;
+    outline: none;
+}
+
+.headerButton.active.focus, .headerButton.active:focus, .headerButton.active:hover, .headerButton.focus:active, .headerButton:active:focus, .headerButton:active:hover {
+    background-color: #f3372b;
+    border-color: transparent;
+    outline: none;
+}
+
+.navigationBar{
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #B2B4CC;
+}
+
+.navigationBarContent{
+	width: 90%;
+	margin-left: 5%;
+}
+
+.pageName{
+	width: 80%;
+	margin: 10px;
+	margin-left: 10%;
+	text-align: center;
+}
+
+
+.botonera{
+	margin: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.menuButton {
+	flex 1 1 auto;
+    height: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #CC9999;
+    border-color: transparent;
+    color: #000;
+    transition: background 0.5s ease-in-out 0s;
+    
+    display:inline-block;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-moz-user-select: none;
+	border: 1px solid transparent;
+    font-family: inherit;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.menuButton:hover, .menuButton:focus, .menuButton:active, .menuButton.active {
+    background-color: #FF6666;
+    border-color: transparent;
+    outline: none;
+}
+
+.menuButton.active.focus, .menuButton.active:focus, .menuButton.active:hover, .menuButton.focus:active, .menuButton:active:focus, .menuButton:active:hover {
+    background-color: #FF6666;
+    border-color: transparent;
+    outline: none;
+}
+
+.menuButton:disabled{
+	background-color: #E5E5E5;
+    border-color: transparent;
+    outline: none;
+}
+
+.sectionTitle{
+	
+	height: 2%;
+	font-size: 24px;
+	text-align: center;
+	padding: 10px;
+	background-color: #E0FFFF;
+	display: block;
+	clear: both;
+	
+}
+
+.dataSection{
+	
+	height: 98%;
+	width: 100%;
+	background-color: #E0FFFF;
+	display: block;
+	padding-top:10px;
+	padding-bottom:10px;
+	
+}
+
+h3{
+	
+	font-size: 20px;
+	text-align: center;
+	padding: 5px 20px;
+	background-color: #AFEEEE;
+	display: block;
+	clear: both;
+	
+	
+}
+
+table.jobTable{
+	margin-left: 7%;
+	margin-left: 7%;
+	margin-top: 10px;
+	width: 80%;
+	border-collapse: collapse;
+	border: 1px solid #fff;
+	border-style: hidden;
+}
+
+table.jobTable thead th{
+	padding: 8px;
+	background-color: #fde9d9;
+	font-size: large;
+}
+
+table.jobTable thead th.cat{
+	width: 40%;
+}
+
+table.jobTable thead th.ent, table.jobTable thead th.date{
+	width: 30%;
+}
+
+table.jobTable th, table.jobTable td{
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f79646 #ccc;
+}
+
+table.jobTable td {
+	text-align: right;
+}
+
+table.jobTable tbody tr.trformat {
+	background-color: #FFFBF8;
+}
+
+table.jobTable tbody th {
+	text-align: left;
+	font-weight: normal;
+}
+
+table.oldjobTable{
+	margin-left: 7%;
+	margin-left: 7%;
+	margin-top: 10px;
+	width: 80%;
+	border-collapse: collapse;
+	border: 1px solid #fff;
+	border-style: hidden;
+}
+
+table.oldjobTable thead th{
+	padding: 8px;
+	background-color: #fde9d9;
+	font-size: large;
+}
+
+table.oldjobTable thead th.cat{
+	width: 40%;
+}
+
+table.oldjobTable thead th.ent, table.oldjobTable thead th.date, table.oldjobTable thead th.act{
+	width: 20%;
+}
+
+table.oldjobTable th, table.oldjobTable td{
+	padding: 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f79646 #ccc;
+}
+
+table.oldjobTable td {
+	text-align: right;
+}
+
+table.oldjobTable tbody tr.trformat {
+	background-color: #FFFBF8;
+}
+
+table.oldjobTable tbody th {
+	text-align: left;
+	font-weight: normal;
+}
+
+table.oldjobTable td.removetd{
+	text-align: center;
+}
+
+input[type=text] {
+	
+  background-color: #FFF;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  font-size: 14px;
+  border-radius: 3px;
+  display:block;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  color: #555;
+  background-image: none;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  margin: 0px;
+  font-famly: inherit;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  
+  
+}
+
+.saveButton{
+	
+	font-size: 16px;
+	text-align: center;
+	border-radius: 3px;
+	border-color: transparent;
+	background-color: #f15f4c;
+	touch-action: manipulation;
+	cursor: pointer;
+	-moz-user-select: none;
+	font-family: inherit;
+    text-transform: none;
+    color: #fff;
+    transition: background 0.5s ease-in-out 0s;
+    display:inline-block;
+    line-height: 1.42857143;
+    white-space: nowrap;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	overflow: visible;
+    box-sizing: border-box;
+	
+}
+
+.saveButton:hover, .saveButton:focus, .saveButton:active, .saveButton.active {
+    background-color: #f3372b;
+    border-color: transparent;
+    outline: none;
+}
+
+.saveButton.active.focus, .saveButton.active:focus, .saveButton.active:hover, .saveButton.focus:active, .saveButton:active:focus, .saveButton:active:hover {
+    background-color: #f3372b;
+    border-color: transparent;
+    outline: none;
+}
+
+.saveButton:disabled{
+	background-color: #E5E5E5;
+    border-color: transparent;
+    outline: none;
+}
+
+.removeButton{
+	
+	width: 50%;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 3px;
+	border-color: transparent;
+	background-color: #f15f4c;
+	touch-action: manipulation;
+	cursor: pointer;
+	-moz-user-select: none;
+	font-family: inherit;
+    text-transform: none;
+    color: #fff;
+    transition: background 0.5s ease-in-out 0s;
+    display:inline-block;
+    line-height: 1.42857143;
+    white-space: nowrap;
+	vertical-align: middle;
+	border: 1px solid transparent;
+	overflow: visible;
+    box-sizing: border-box;
+	
+}
+
+.removeButton:hover, .removeButton:focus, .removeButton:active, .removeButton.active {
+    background-color: #f3372b;
+    border-color: transparent;
+    outline: none;
+}
+
+.removeButton.active.focus, .removeButton.active:focus, .removeButton.active:hover, .removeButton.focus:active, .removeButton:active:focus, .removeButton:active:hover {
+    background-color: #f3372b;
+    border-color: transparent;
+    outline: none;
+}
+
+.removeButton:disabled{
+	background-color: #E5E5E5;
+    border-color: transparent;
+    outline: none;
+}
+
+.datosForm{
+	padding: 20px;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.fechaForm{
+	padding: 20px;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.campo{
+	margin-bottom: 5px;
+}
+
+h5{
+	
+	font-size: 16px;
+	text-align: left;
+	padding: 5px 12px;
+	
+	
+}
+
+span{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+
